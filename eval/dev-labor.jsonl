@@ -1,0 +1,100 @@
+{"id": "l001", "question": "근로기준법은 직원이 몇 명 이상인 사업장에 적용되나요?", "kind": "in_scope", "expected": ["근로기준법 제11조"], "must_include": [["5명"]], "style": "lookup"}
+{"id": "l002", "question": "같이 사는 가족끼리만 운영하는 가게에서 일하는 친척도 근로기준법 적용을 받나요?", "kind": "in_scope", "expected": ["근로기준법 제11조"], "must_include": [["동거하는 친족"]], "style": "situation"}
+{"id": "l003", "question": "직원 수가 날마다 들쭉날쭉한데 법 적용 기준이 되는 상시 근로자 수는 어떻게 세나요?", "kind": "in_scope", "expected": ["근로기준법 제11조", "근로기준법시행령 제7조의2"], "must_include": [["연인원"], ["가동 일수"]], "style": "multi_article"}
+{"id": "l004", "question": "평균임금은 어떻게 계산하나요?", "kind": "in_scope", "expected": ["근로기준법 제2조"], "must_include": [["3개월"], ["총일수"]], "style": "lookup"}
+{"id": "l005", "question": "평균임금을 계산할 때 수습기간 동안 받은 돈도 넣나요?", "kind": "in_scope", "expected": ["근로기준법시행령 제2조"], "must_include": [["수습"], ["뺀다", "빼", "제외"]], "style": "multi_article", "avoid_terms": ["제외"]}
+{"id": "l006", "question": "통상임금이란 무엇인가요?", "kind": "in_scope", "expected": ["근로기준법시행령 제6조"], "must_include": [["정기적"], ["일률적"]], "style": "lookup"}
+{"id": "l007", "question": "월급제인데 시간당 통상임금은 어떻게 구하나요?", "kind": "in_scope", "expected": ["근로기준법시행령 제6조"], "must_include": [["통상임금 산정 기준시간"]], "style": "calculation"}
+{"id": "l008", "question": "법보다 낮은 조건으로 근로계약서를 썼으면 그 계약은 통째로 무효인 거죠?", "kind": "in_scope", "expected": ["근로기준법 제15조"], "must_include": [["그 부분"]], "style": "false_premise"}
+{"id": "l009", "question": "근로기준법상 근로계약 기간은 1년을 넘길 수 없나요?", "kind": "in_scope", "expected": ["근로기준법 제16조"], "must_include": [["2007년 6월 30일까지"]], "style": "validity", "note": "제16조 is valid only until 2007-06-30 (조문참고자료); needs the reference note in the corpus"}
+{"id": "l010", "question": "근로계약을 맺을 때 사장이 반드시 알려줘야 하는 조건은 뭔가요?", "kind": "in_scope", "expected": ["근로기준법 제17조"], "must_include": [["임금"], ["소정근로시간"], ["휴일"], ["연차"]], "style": "lookup"}
+{"id": "l011", "question": "알바를 시작했는데 사장님이 계약서를 안 줘요. 종이로 받을 권리가 있나요?", "kind": "in_scope", "expected": ["근로기준법 제17조"], "must_include": [["교부"]], "style": "situation", "avoid_terms": ["교부", "서면"]}
+{"id": "l012", "question": "주에 12시간만 일하는 알바도 주휴일이랑 연차휴가를 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제18조"], "must_include": [["15시간 미만"]], "style": "situation"}
+{"id": "l013", "question": "계약서에 적힌 근무시간과 실제 근무가 완전히 달라요. 바로 그만둘 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제19조"], "must_include": [["즉시"], ["해제"]], "style": "situation", "avoid_terms": ["해제"]}
+{"id": "l014", "question": "입사할 때 1년 안에 그만두면 300만원을 물어낸다는 각서를 썼어요. 정말 내야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제20조"], "must_include": [["위약금", "손해배상액을 예정"]], "style": "user_numbers"}
+{"id": "l015", "question": "회사에서 미리 빌려 쓴 돈을 사장이 월급에서 마음대로 빼고 줘요. 괜찮은 건가요?", "kind": "in_scope", "expected": ["근로기준법 제21조"], "must_include": [["상계"]], "style": "situation", "avoid_terms": ["전차금", "상계"]}
+{"id": "l016", "question": "회사가 월급 일부로 적금 강제로 들게함 이거 됨?", "kind": "in_scope", "expected": ["근로기준법 제22조"], "must_include": [["강제 저축"]], "style": "short_typo"}
+{"id": "l017", "question": "출산휴가 중인데 회사가 해고하겠다고 해요. 그럴 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제23조"], "must_include": [["30일"]], "style": "situation"}
+{"id": "l018", "question": "회사가 경영이 어렵다고 해고하려면 어떤 요건을 갖춰야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제24조"], "must_include": [["긴박한 경영상의 필요"], ["해고를 피하기 위한"]], "style": "lookup"}
+{"id": "l019", "question": "회사가 정리해고 20일 전에야 노조에 처음 알렸어요. 절차에 문제가 없나요?", "kind": "in_scope", "expected": ["근로기준법 제24조"], "must_include": [["50일"]], "style": "user_numbers"}
+{"id": "l020", "question": "직원 300명인 회사가 한 달에 40명을 정리해고하려면 노동부에 신고해야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제24조", "근로기준법시행령 제10조"], "must_include": [["10퍼센트"], ["30일"]], "style": "calculation"}
+{"id": "l021", "question": "정리해고를 당했는데 회사가 제가 하던 일을 할 사람을 새로 뽑는대요. 제가 먼저 돌아갈 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제25조"], "must_include": [["3년"], ["우선"]], "style": "situation"}
+{"id": "l022", "question": "입사한 지 두 달 됐는데 내일부터 나오지 말래요. 한 달 치 월급을 따로 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제26조"], "must_include": [["3개월 미만"]], "style": "situation", "avoid_terms": ["예고"]}
+{"id": "l023", "question": "사장이 전화로 해고한다고 했어요. 말로 통보해도 해고는 유효한 거죠?", "kind": "in_scope", "expected": ["근로기준법 제27조"], "must_include": [["서면"]], "style": "false_premise"}
+{"id": "l024", "question": "부당해고 구제신청 어디다 언제까지 해야됨?", "kind": "in_scope", "expected": ["근로기준법 제28조"], "must_include": [["노동위원회"], ["3개월"]], "style": "short_typo"}
+{"id": "l025", "question": "부당해고로 인정받았는데 그 회사로 다시 돌아가기는 싫어요. 돈으로 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제30조"], "must_include": [["임금 상당액"]], "style": "situation"}
+{"id": "l026", "question": "지방노동위원회 판정이 마음에 안 들면 며칠 안에 재심을 신청해야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제31조"], "must_include": [["10일"], ["중앙노동위원회"]], "style": "lookup"}
+{"id": "l027", "question": "중앙노동위원회 재심판정에도 불복하려면 어떻게 하고 기한은 언제까지인가요?", "kind": "in_scope", "expected": ["근로기준법 제31조"], "must_include": [["15일"], ["행정소송", "소(訴)"]], "style": "multi_article"}
+{"id": "l028", "question": "회사가 재심을 신청했으니 결과가 나올 때까지 구제명령은 안 따라도 되는 거죠?", "kind": "in_scope", "expected": ["근로기준법 제32조"], "must_include": [["정지되지"]], "style": "false_premise"}
+{"id": "l029", "question": "구제명령을 따르지 않는 사업주에게 이행강제금은 얼마까지 부과되나요?", "kind": "in_scope", "expected": ["근로기준법 제33조"], "must_include": [["3천만원"]], "style": "lookup"}
+{"id": "l030", "question": "노동위원회가 구제명령을 내리면 회사는 며칠 안에 이행해야 하나요?", "kind": "in_scope", "expected": ["근로기준법시행령 제11조"], "must_include": [["30일"]], "style": "multi_article"}
+{"id": "l031", "question": "퇴직금은 근로기준법에서 정하나요, 다른 법에서 정하나요?", "kind": "in_scope", "expected": ["근로기준법 제34조"], "must_include": [["근로자퇴직급여 보장법"]], "style": "other_law_words"}
+{"id": "l032", "question": "회사를 그만뒀는데 마지막 달 월급과 남은 돈은 언제까지 받아야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제36조"], "must_include": [["14일"]], "style": "situation"}
+{"id": "l033", "question": "퇴사한 뒤 밀린 월급을 늦게 주면 지연이자는 연 몇 퍼센트인가요?", "kind": "in_scope", "expected": ["근로기준법 제37조", "근로기준법시행령 제17조"], "must_include": [["100분의 20", "20%", "20퍼센트"]], "style": "multi_article"}
+{"id": "l034", "question": "임금 액수를 두고 회사와 법원에서 다투는 중이에요. 그래도 그동안의 연 20% 지연이자는 무조건 받을 수 있죠?", "kind": "in_scope", "expected": ["근로기준법 제37조", "근로기준법시행령 제18조"], "must_include": [["적용하지 아니", "적용하지 않", "적용되지 않"]], "style": "false_premise"}
+{"id": "l035", "question": "회사가 망했는데 근저당 잡은 은행보다 밀린 월급을 먼저 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제38조"], "must_include": [["최종 3개월분"]], "style": "situation"}
+{"id": "l036", "question": "퇴사한 지 1년 됐는데 전 회사에 경력증명서를 떼달라고 할 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제39조", "근로기준법시행령 제19조"], "must_include": [["3년"]], "style": "multi_article"}
+{"id": "l037", "question": "전 직장 사장이 업계에 저를 뽑지 말라는 명단을 돌린 것 같아요. 이게 허용되나요?", "kind": "in_scope", "expected": ["근로기준법 제40조"], "must_include": [["명부", "비밀 기호"]], "style": "situation"}
+{"id": "l038", "question": "회사는 근로계약서를 몇 년 동안 보관해야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제42조", "근로기준법시행령 제22조"], "must_include": [["3년"]], "style": "multi_article"}
+{"id": "l039", "question": "회사가 월급 일부를 현금 대신 상품권으로 주겠대요. 그래도 되나요?", "kind": "in_scope", "expected": ["근로기준법 제43조"], "must_include": [["통화"]], "style": "situation", "avoid_terms": ["통화"]}
+{"id": "l040", "question": "상여금을 석 달에 한 번 주는 건 월급을 매달 줘야 한다는 원칙에 어긋나지 않나요?", "kind": "in_scope", "expected": ["근로기준법 제43조", "근로기준법시행령 제23조"], "must_include": [["1개월을 초과"]], "style": "multi_article"}
+{"id": "l041", "question": "임금을 안 준 사업주의 명단은 어떤 경우에 공개되나요?", "kind": "in_scope", "expected": ["근로기준법 제43조의2"], "must_include": [["2회 이상"], ["3천만원"]], "style": "lookup"}
+{"id": "l042", "question": "사장이 1년 동안 4개월 치 월급을 안 줬어요. 밀린 돈보다 더 많이 받아낼 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제43조의8"], "must_include": [["3배"]], "style": "user_numbers"}
+{"id": "l043", "question": "하청업체 직원인데 원청이 대금을 안 줘서 회사가 월급을 못 준대요. 원청에도 책임을 물을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제44조"], "must_include": [["연대"]], "style": "situation"}
+{"id": "l044", "question": "결혼식 비용 때문에 이미 일한 만큼의 월급을 월급날 전에 미리 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제45조", "근로기준법시행령 제25조"], "must_include": [["혼인"]], "style": "multi_article"}
+{"id": "l045", "question": "회사 사정으로 한 달 동안 쉬라고 하는데, 그동안 월급은 얼마나 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제46조"], "must_include": [["100분의 70"]], "style": "situation", "avoid_terms": ["휴업"]}
+{"id": "l046", "question": "월급 받을 때 주는 명세서에는 어떤 내용이 들어가야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제48조", "근로기준법시행령 제27조의2"], "must_include": [["임금 총액"], ["공제"]], "style": "multi_article"}
+{"id": "l047", "question": "못 받은 임금은 몇 년이 지나면 청구할 수 없게 되나요?", "kind": "in_scope", "expected": ["근로기준법 제49조"], "must_include": [["3년"]], "style": "lookup"}
+{"id": "l048", "question": "법정 근로시간은 하루, 일주일에 각각 몇 시간인가요?", "kind": "in_scope", "expected": ["근로기준법 제50조"], "must_include": [["8시간"], ["40시간"]], "style": "lookup"}
+{"id": "l049", "question": "출근해서 손님이 올 때까지 매장에서 기다리는 시간도 근로시간인가요?", "kind": "in_scope", "expected": ["근로기준법 제50조"], "must_include": [["대기시간"]], "style": "situation"}
+{"id": "l050", "question": "2주 단위 탄력적 근로시간제에서는 한 주에 최대 몇 시간까지 일할 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제51조"], "must_include": [["48시간"]], "style": "lookup"}
+{"id": "l051", "question": "주 40시간 일하는데 사장님이 매주 15시간씩 연장근무를 시켜요. 합법인가요?", "kind": "in_scope", "expected": ["근로기준법 제53조"], "must_include": [["12시간"]], "style": "user_numbers"}
+{"id": "l052", "question": "휴일에 10시간 일했어요. 가산수당은 어떻게 계산하나요?", "kind": "in_scope", "expected": ["근로기준법 제56조"], "must_include": [["100분의 50"], ["100분의 100"]], "style": "calculation"}
+{"id": "l053", "question": "8시간 일하면 쉬는시간 얼마나 줘야됨?", "kind": "in_scope", "expected": ["근로기준법 제54조"], "must_include": [["1시간"]], "style": "short_typo"}
+{"id": "l054", "question": "주휴일은 어떤 조건을 채워야 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제55조", "근로기준법시행령 제30조"], "must_include": [["개근"], ["유급"]], "style": "multi_article"}
+{"id": "l055", "question": "업무 방식을 직원 재량에 맡기는 근로시간제는 어떤 업무에 쓸 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제58조", "근로기준법시행령 제31조"], "must_include": [["연구"], ["디자인"]], "style": "multi_article"}
+{"id": "l056", "question": "1년 동안 다니면 연차휴가는 며칠 생기나요?", "kind": "in_scope", "expected": ["근로기준법 제60조"], "must_include": [["15일"], ["80퍼센트"]], "style": "lookup"}
+{"id": "l057", "question": "입사한 지 6개월 됐는데 저도 연차가 있나요?", "kind": "in_scope", "expected": ["근로기준법 제60조"], "must_include": [["1개월 개근"]], "style": "situation"}
+{"id": "l058", "question": "10년 근속하면 연차휴가가 며칠인가요?", "kind": "in_scope", "expected": ["근로기준법 제60조"], "must_include": [["매 2년"], ["25일"]], "style": "calculation"}
+{"id": "l059", "question": "육아휴직을 1년 쓰고 복직했으니 출근율이 모자라서 연차는 없는 거죠?", "kind": "in_scope", "expected": ["근로기준법 제60조"], "must_include": [["출근한 것으로"]], "style": "false_premise"}
+{"id": "l060", "question": "회사가 남은 연차를 쓰라고 서면으로 알렸는데 제가 안 썼어요. 그래도 남은 연차를 돈으로 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제61조"], "must_include": [["보상할 의무가 없"]], "style": "situation"}
+{"id": "l061", "question": "근로시간, 휴게, 휴일 규정이 적용되지 않는 근로자는 누구인가요?", "kind": "in_scope", "expected": ["근로기준법 제63조", "근로기준법시행령 제34조"], "must_include": [["감시", "단속적"], ["관리", "감독"]], "style": "multi_article"}
+{"id": "l062", "question": "취직인허증은 몇 살부터 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제64조", "근로기준법시행령 제35조"], "must_include": [["13세"]], "style": "multi_article"}
+{"id": "l063", "question": "고등학생 알바는 하루와 일주일에 각각 최대 몇 시간 근무가 가능한가요?", "kind": "in_scope", "expected": ["근로기준법 제69조"], "must_include": [["7시간"], ["35시간"]], "style": "lookup"}
+{"id": "l064", "question": "17살인데 편의점에서 밤 11시부터 아침까지 알바해도 되나요?", "kind": "in_scope", "expected": ["근로기준법 제70조"], "must_include": [["오후 10시"], ["인가"]], "style": "situation"}
+{"id": "l065", "question": "생리휴가 한달에 몇일임?", "kind": "in_scope", "expected": ["근로기준법 제73조"], "must_include": [["1일"]], "style": "short_typo"}
+{"id": "l066", "question": "쌍둥이를 임신했는데 출산휴가는 며칠이고 그중 유급은 며칠인가요?", "kind": "in_scope", "expected": ["근로기준법 제74조"], "must_include": [["120일"], ["75일"]], "style": "user_numbers"}
+{"id": "l067", "question": "임신 18주에 유산했는데 회사에 휴가를 며칠 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제74조", "근로기준법시행령 제43조"], "must_include": [["30일"]], "style": "multi_article"}
+{"id": "l068", "question": "임신 10주인데 하루 근무시간을 줄여달라고 할 수 있나요? 월급은 깎이나요?", "kind": "in_scope", "expected": ["근로기준법 제74조"], "must_include": [["2시간"], ["삭감"]], "style": "situation"}
+{"id": "l069", "question": "직장 내 괴롭힘은 어떤 행위를 말하나요?", "kind": "in_scope", "expected": ["근로기준법 제76조의2"], "must_include": [["우위"], ["업무상 적정범위"]], "style": "lookup"}
+{"id": "l070", "question": "팀장에게 괴롭힘을 당해 회사에 신고했는데 회사가 아무 조사도 안 해요.", "kind": "in_scope", "expected": ["근로기준법 제76조의3"], "must_include": [["지체 없이"], ["조사"]], "style": "situation"}
+{"id": "l071", "question": "괴롭힘을 신고했더니 회사가 저를 지방으로 발령냈어요. 문제 삼을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제76조의3"], "must_include": [["불리한 처우"]], "style": "situation"}
+{"id": "l072", "question": "일하다 다쳐서 치료받느라 출근을 못 하고 있어요. 그동안 회사에서 얼마를 받을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제79조"], "must_include": [["100분의 60"]], "style": "situation", "avoid_terms": ["휴업보상"]}
+{"id": "l073", "question": "근로자가 업무상 사망하면 유족보상은 얼마인가요?", "kind": "in_scope", "expected": ["근로기준법 제82조"], "must_include": [["1,000일분"]], "style": "lookup"}
+{"id": "l074", "question": "취업규칙은 직원이 몇 명 이상이면 만들어서 신고해야 하나요?", "kind": "in_scope", "expected": ["근로기준법 제93조"], "must_include": [["10명"]], "style": "lookup"}
+{"id": "l075", "question": "회사가 취업규칙을 직원에게 불리하게 바꾸면서 직원들 동의를 받지 않았어요. 효력이 있나요?", "kind": "in_scope", "expected": ["근로기준법 제94조"], "must_include": [["동의"]], "style": "situation"}
+{"id": "l076", "question": "지각을 자주 해서 감봉 징계를 받는대요. 한 번에 얼마까지 깎을 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제95조"], "must_include": [["2분의 1"], ["10분의 1"]], "style": "calculation"}
+{"id": "l077", "question": "근로기준법 제60조 보여줘", "kind": "in_scope", "expected": ["근로기준법 제60조"], "must_include": [["15일"]], "style": "lookup"}
+{"id": "l078", "question": "근로기준법 시행령 제30조 보여줘", "kind": "in_scope", "expected": ["근로기준법시행령 제30조"], "must_include": [["개근"]], "style": "lookup"}
+{"id": "l079", "question": "노동청에 임금체불을 신고했다고 회사가 저를 해고했어요.", "kind": "in_scope", "expected": ["근로기준법 제104조"], "must_include": [["해고", "불리한 처우"], ["통보","신고"]], "style": "situation"}
+{"id": "l080", "question": "산후 6개월 된 직원에게 연장근무는 최대 몇 시간까지 시킬 수 있나요?", "kind": "in_scope", "expected": ["근로기준법 제71조"], "must_include": [["2시간"], ["6시간"], ["150시간"]], "style": "multi_article"}
+{"id": "l081", "question": "올해 최저시급은 얼마인가요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 최저임금법"}
+{"id": "l082", "question": "퇴직금 중간정산은 어떤 경우에 받을 수 있나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 근로자퇴직급여 보장법"}
+{"id": "l083", "question": "퇴직연금 DB형과 DC형은 뭐가 다른가요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 근로자퇴직급여 보장법"}
+{"id": "l084", "question": "실업급여를 받으려면 몇 개월 이상 일해야 하나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 고용보험법"}
+{"id": "l085", "question": "육아휴직은 최대 몇 년까지 쓸 수 있나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 남녀고용평등과 일ㆍ가정 양립 지원에 관한 법률"}
+{"id": "l086", "question": "배우자 출산휴가는 며칠인가요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 남녀고용평등과 일ㆍ가정 양립 지원에 관한 법률"}
+{"id": "l087", "question": "계약직으로 2년 넘게 일하면 정규직으로 바뀌나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 기간제 및 단시간근로자 보호 등에 관한 법률"}
+{"id": "l088", "question": "파견근로자는 같은 회사에서 최대 몇 년까지 일할 수 있나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 파견근로자보호 등에 관한 법률"}
+{"id": "l089", "question": "노동조합을 만들려면 어디에 신고해야 하나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 노동조합 및 노동관계조정법"}
+{"id": "l090", "question": "파업을 하려면 조합원 찬반투표를 거쳐야 하나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 노동조합 및 노동관계조정법"}
+{"id": "l091", "question": "노조에 가입했다는 이유로 불이익을 받으면 부당노동행위로 신고할 수 있나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 노동조합 및 노동관계조정법"}
+{"id": "l092", "question": "외국인 근로자 고용허가 기간을 연장하려면 어떻게 하나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 외국인근로자의 고용 등에 관한 법률"}
+{"id": "l093", "question": "회사가 망해서 밀린 월급을 못 받을 때 나라에서 주는 대지급금은 얼마까지인가요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 임금채권보장법"}
+{"id": "l094", "question": "중대재해가 나면 사업주는 어떤 처벌을 받나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 중대재해 처벌 등에 관한 법률"}
+{"id": "l095", "question": "4대보험 요율은 각각 몇 퍼센트인가요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 국민연금법·국민건강보험법·고용보험법·산재보험법 등"}
+{"id": "l096", "question": "연말정산 때 근로소득공제는 어떻게 계산하나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 소득세법"}
+{"id": "l097", "question": "노동위원회 공익위원은 어떻게 뽑나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 노동위원회법"}
+{"id": "l098", "question": "전세 계약이 끝나갈 때 세입자가 계약갱신을 요구할 수 있나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 주택임대차보호법"}
+{"id": "l099", "question": "세입자가 월세를 두 번 밀리면 집주인이 바로 내보낼 수 있나요?", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by 민법·주택임대차보호법"}
+{"id": "l100", "question": "된장찌개 맛있게 끓이는 법 알려줘", "kind": "out_of_scope", "expected": [], "style": "out_of_scope", "note": "governed by not a legal question"}
