@@ -1,7 +1,7 @@
 [project]
 name = "lawcase_local"
 version = "0.1.0"
-description = "Add your description here"
+description = "Answer questions about a Korean law with verbatim quotes from the cited articles, using only local models"
 readme = "README.md"
 authors = [
     { name = "bhsong", email = "sbh3003@gmail.com" }
@@ -15,3 +15,18 @@ lawcase_local = "lawcase_local:main"
 [build-system]
 requires = ["uv_build>=0.12.19,<0.13.0"]
 build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.17.0",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
