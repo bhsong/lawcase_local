@@ -5,10 +5,10 @@ Answers questions about a Korean law (an Act and its Enforcement Decree) with ve
 ## Commands
 
 ```
-uv run lawcase_local                          # run the Gradio app
+uv run --env-file .env lawcase_local          # run the Gradio app
 uv run pytest                                 # tests (no network, no models)
 uv run ruff check && uv run ruff format       # lint and format
-uv run python -m lawcase_local.evaluate ...   # evaluation (runs local models)
+uv run --env-file .env python -m lawcase_local.evaluate ...   # evaluation (runs local models)
 ```
 
 ## Purpose: the user learns by building
