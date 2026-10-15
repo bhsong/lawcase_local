@@ -43,17 +43,17 @@ Developed and measured on a Mac mini (Apple silicon, 32 GB). Requires Python 3.1
 uv sync
 cp .env.example .env          # fill in LAW_OC (law.go.kr Open API ID) and LLM_MODEL
 llama-server -m <model>.gguf --port 8080
-uv run lawcase_local          # Gradio page on 127.0.0.1
+uv run --env-file .env lawcase_local   # Gradio page on 127.0.0.1
 ```
 
-Settings are environment variables; the full list is in `docs/DESIGN.md` §4.
+Settings are environment variables; the full list is in `docs/DESIGN.md` §4. `.env` is read only when passed with `--env-file .env` (or with `UV_ENV_FILE=.env` set in the shell).
 
 ## Evaluation and tests
 
 ```
-uv run python -m lawcase_local.evaluate --save NAME     # full dev run, saved
-uv run python -m lawcase_local.evaluate --compare A B   # paired by id
-uv run python -m lawcase_local.evaluate --recall        # search recall, no answer model
+uv run --env-file .env python -m lawcase_local.evaluate --save NAME     # full dev run, saved
+uv run --env-file .env python -m lawcase_local.evaluate --compare A B   # paired by id
+uv run --env-file .env python -m lawcase_local.evaluate --recall        # search recall, no answer model
 uv run pytest                                          # no network, no models
 ```
 

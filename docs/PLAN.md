@@ -36,7 +36,7 @@ Every run is saved and added as one row to the results table (step 11): context 
 Each step starts on its own branch and ends with `uv run pytest` and `ruff` passing. Every item starts with tests written by Claude, shown failing and approved by the user; then the implementation (by the user where marked).
 
 ### 0. Skeleton
-- [ ] uv project, `config.py` settings (env vars), ruff, pytest, GitHub Actions CI. A missing required setting exits with its name, never its value.
+- [x] uv project, `config.py` settings (env vars), ruff, pytest, GitHub Actions CI. A missing required setting exits with its name, never its value.
 
 ### 1. Corpus
 - [ ] Fetch the Act and Decree from law.go.kr (`LAW_OC`); save raw responses without the OC value.
@@ -93,3 +93,7 @@ Later plans (separate files): fine-tuning the reranker and embeddings, the route
 | 2026-10-14 | Order: corpus → eval → full-context baseline → verification → app → search one piece at a time | each search step is measured against a no-search baseline; eval exists before any model runs |
 | 2026-10-14 | Gradio instead of FastAPI and a hand-written page | a working UI in a few lines; the app is for looking at answers, eval is the measure |
 | 2026-10-14 | Develop v2 on the Mac mini (32 GB) only | the 27B answer model and a full-statute KV cache do not fit in 8 GB; one machine keeps latency and memory comparable across runs |
+| 2026-10-15 | Step 0 done: `load_settings(env=os.environ)` returns a frozen dataclass; standard library only, `.env` passed with `uv run --env-file .env` | about 15 str/int settings need a few lines; pydantic's `ValidationError` prints the input value, which the no-value rule forbids |
+| 2026-10-15 | `LLM_MODEL` is required in `load_settings`; `LAW_OC` is optional there (`None`) and checked by `fetch_law` | answering and eval runs do not need the law.go.kr ID |
+| 2026-10-15 | Invalid settings (missing, non-integer, unknown `CONTEXT`) exit with the name only; empty counts as missing; `LAW_OC` is left out of `repr` | a mistyped value may be a secret; keeps the ID out of logs and saved results |
+| 2026-10-15 | CI: GitHub Actions on ubuntu, `uv sync --locked`, ruff check and format, pytest, `DEVICE=cpu` | tests use no models or MPS; `--locked` catches an uncommitted `uv.lock`. Step 0: 20 tests pass locally and in CI |
